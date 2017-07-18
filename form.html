@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+
+<header class="page-header">
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item">Главная</li>
+      <li class="main-nav__item">Фото и видео</li>
+      <li class="main-nav__item">Форма отзыва</li>
+      <li class="main-nav__item">HTML ACADEMY</li>
+      <li class="main-nav__item">LOGO</li>
+    </ul>
+  </nav>
+
+  <div class="page-header__title">
+    <h1 class="page-header__title-text">Оставьте свой отзыв</h1>
+    <div class="page-header__title-advantages">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</div>
+  </div>
+
+</header>
+
+<main>
+  <section class="review">
+
+  <form class="review__form" id="review__form" action="https://echo.htmlacademy.ru/" method="post">
+
+    <div class="review__bio review__wrapper">
+      <fieldset class="review__group">
+
+        <legend class="review__title">Представьтесь</legend>
+        <div class="review__prop-wrapper review__prop-wrapper--small">
+
+          <label for="name" class="review__prop review__prop--name">Имя*:</label>
+          <input type="text" name="name" id="name" class="review__input-data" placeholder="Петр" required>
+
+          <label for="surname" class="review__prop review__prop--name">Фамилия*:</label>
+          <input type="text" name="surname" id="surname" class="review__input-data" placeholder="Иванов" required>
+
+          <label for="patronymic" class="review__prop review__prop--name">Отчество:</label>
+          <input type="text" name="patronymic" id="patronymic" class="review__input-data" placeholder="Александрович">
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="review__tel review__wrapper">
+      <div class="review__title">Контактная информация:</div>
+      <label for="tel" class="review__title">Контактный телефон*:</label>
+      <div class="review__prop-wrapper review__prop-wrapper--small">
+        <input type="tel" name="tel" id="tel" class="review__input-data review__input-data--tel" placeholder="Введите телефон" required>
+        <svg class="icon-phone" width="24.829px" height="24.333px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
+      </div>
+    </div>
+
+    <div class="review__email review__wrapper">
+      <label for="email" class="review__title">Электронная почта*:</label>
+      <div class="review__prop-wrapper review__prop-wrapper--small">
+        <input type="email" name="email" id="email"  class="review__input-data review__input-data--mail" placeholder="Введите e-mail" required>
+        <svg class="icon-email" width="32px" height="32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg>
+      </div>
+    </div>
+
+    <div class="review__type review__wrapper">
+      <fieldset class="review__group">
+
+        <legend class="review__title">Ваше общее впечатление:</legend>
+
+        <div class="review__prop-wrapper">
+
+          <input type="radio" name="impression" id="good" class="review__check-button review__check-button--circle" value="Скорее положительное" checked>
+          <label for="good" class="review__prop review__prop--circle">Скорее положительное</label>
+
+          <input type="radio" name="impression" id="bad" class="review__check-button review__check-button--circle" value="Скорее отрицательное">
+          <label for="bad" class="review__prop review__prop--circle">Скорее отрицательное</label>
+
+          <input type="radio" name="impression" id="do-not-know" class="review__check-button review__check-button--circle" value="Затрудняюсь ответить">
+          <label for="do-not-know" class="review__prop review__prop--circle">Затрудняюсь ответить</label>
+
+        </div>
+
+      </fieldset>
+    </div>
+
+    <div class="review__color review__wrapper">
+
+      <fieldset class="review__group">
+
+        <legend class="review__title">посещенные достопримечательности:</legend>
+
+        <div class="review__prop-wrapper">
+
+          <input type="checkbox" name="devils-bridge" id="devils-bridge" class="review__check-button review__check-button--rect" value="Белый" checked>
+          <label for="devils-bridge" class="review__prop review__prop--rect">Мост Дьявола</label>
+
+          <input type="checkbox" name="slide-park" id="slide-park" class="review__check-button review__check-button--rect" value="Серый" checked>
+          <label for="slide-park" class="review__prop review__prop--rect">Слайд-парк</label>
+
+
+          <input type="checkbox" name="sanbangsan_mountain" id="sanbangsan_mountain" class="review__check-button review__check-button--rect" value="Тиффани">
+          <label for="sanbangsan_mountain" class="review__prop review__prop--rect">Гора-Колокол</label>
+
+
+          <input type="checkbox" name="red_mountains" id="red_mountains" class="review__check-button review__check-button--rect" value="Черный">
+          <label for="red_mountains" class="review__prop review__prop--rect">Красные скалы</label>
+
+        </div>
+
+      </fieldset>
+
+    </div>
+
+    <div class="review__additional review__wrapper">
+      <label for="emotions" class="review__title">Опишите свои эмоции:</label>
+      <div class="review__prop-wrapper">
+        <textarea name="emotions" id="emotions" rows="5" cols="20" class="review__input-text" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+    </div>
+
+  </form>
+
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__logo">
+    <a class="page-footer__logo-link"></a>
+  </div>
+  <div class="page-footer__socials">
+    <a class="page-footer__socials-link" href="https://www.instagram.com/htmlacademy/">Мы в Твиттере</a>
+    <a class="page-footer__socials-link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+    <a class="page-footer__socials-link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">Мы на Youtube</a>
+  </div>
+  <div class="page-footer__copyright">
+    Разработано
+    <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+  </div>
+</footer>
+
+</body>
+</html>
