@@ -33,7 +33,6 @@ build
 
 ---
 
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github.svg"></a>
 
 
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/164719-sedona.svg?branch=master
