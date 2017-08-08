@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Верстка: [Александр Зубрицкий](https://zbralex.github.io/).
-
+:person_with_blond_hair:
 ---
 
 **Спецификация и ТЗ лежат в папке:**
