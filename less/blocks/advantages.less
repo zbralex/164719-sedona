@@ -40,17 +40,21 @@
 .icon-house {
   fill: #81b3d2;
   width: 40px;
-  height: 110px;
-  padding: 20px;
+}
+
+.advantages__icon {
+  flex-basis: 90%;
 }
 
 .advantages__list-title {
-  flex-grow: 1;
+  display: inherit;
+  flex-basis: 55%;
   .header-reset();
   .uppercase();
   .line-height-title();
   font-size: 18px;
   width: 70%;
+  align-items: center;
 }
 
 .advantages__list-item {
@@ -60,8 +64,12 @@
   flex-flow: column wrap;
   height: 165px;
   box-sizing: border-box;
+  .uppercase();
 }
 
 .advantages__list-description {
+  display: inherit;
+  padding: 0;
+  margin: 0;
   width: 70%;
 }
