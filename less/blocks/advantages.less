@@ -1,0 +1,158 @@
+.advantages {
+  text-align: center;
+
+  &--third {
+    min-height: 165px;
+    padding: 0 20px;
+  }
+
+  &--fourth {
+    min-height: 154px;
+    padding: 0 20px;
+  }
+
+  &--fifth {
+    min-height: 150px;
+    padding: 0 20px;
+  }
+
+  &--third, &--fourth, &--fifth {
+    background-color: #eeeeee;
+  }
+}
+
+.advantages__title {
+  .title();
+  .uppercase();
+  color: @white;
+  margin: 0;
+
+  &--second {
+    padding: 39px 0 0 2px;
+  }
+
+  &--third {
+    padding: 25px 0 0;
+  }
+
+  &--fourth, &--fifth {
+    padding: 26px 0 0;
+  }
+
+  &--third, &--fourth, &--fifth {
+    color: @black;
+  }
+}
+
+.advantages__description {
+  .advantages-description();
+  padding: 0 25px;
+
+  &--third, &--fourth {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &--third, &--fourth, &--fifth {
+    padding: 14px 15px 27px;
+    margin: 0;
+    color: lighten(@black, 20%);
+  }
+}
+
+.advantages--first{
+  text-align: center;
+  background-image: url(/img/bg-triangle.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 58px 0 10px;
+}
+
+.advantages__number {
+  .advantages-description();
+  margin-top: 10px;
+
+  &--third, &--fourth, &--fifth {
+    color: lighten(@black, 20%);
+  }
+}
+
+.advantages__list {
+  .list-reset();
+  box-sizing: border-box;
+}
+
+.advantages__wrapper {
+  background-color: rgba(130, 179, 211, 0.85);
+  height: 153px;
+
+  &--second {
+    min-height: 190px;
+  }
+}
+
+.advantages__icon {
+  flex-basis: 100%;
+  outline: 1px solid;
+  width: 20%;
+  display: inherit;
+  justify-content: center;
+  padding-left: 8px;
+  padding-top: 20px;
+}
+
+.advantages__list-title {
+  display: inherit;
+  flex-basis: 45%;
+  .header-reset();
+  .uppercase();
+  .line-height-title();
+  font-size: 18px;
+  width: auto;
+  align-items: flex-end;
+  .title();
+  outline: 1px solid;
+
+  &--food {
+    flex-basis: 40%;
+    align-items: center;
+  }
+}
+
+.advantages__list-item {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  flex-flow: column wrap;
+  height: 130px;
+  min-height: 100px;
+  max-height: 100%;
+  .uppercase();
+}
+
+.advantages__list-description {
+  display: inherit;
+  padding: 13px 0 5px 0;
+  margin: 0;
+  width: 78%;
+  height: 40%;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  outline: 1px solid;
+
+  &--food {
+    padding: 1px 20px 5px 0;
+    height: 54%;
+    width: 72%;
+  }
+}
+
+.advantages__icon--burger {
+  padding: 6px 0 6px 6px;
+}
+
+.advantages--second {
+  min-height: 450px;
+  margin-top: 13px;
+}
