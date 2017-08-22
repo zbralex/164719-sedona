@@ -1,13 +1,15 @@
 .search-form {
   min-height: 290px;
-}
+  margin-bottom: 15px;
 
-.search-form__title {
-  .header-reset();
-  .line-height-title();
-  font-size: 21px;
-  text-align: center;
-  padding-top: 30px;
+  &__title, &__tag {
+    .header-reset();
+    .line-height-title();
+    .uppercase();
+    font-size: 21px;
+    text-align: center;
+    padding-top: 30px;
+  }
 }
 
 .search-form__description {
@@ -34,4 +36,8 @@
   font-weight: bold;
   line-height: 26px;
   color: @white;
+}
+
+.search-form__map-frame {
+  height: 370px;
 }
