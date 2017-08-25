@@ -83,71 +83,84 @@
     </ul>
   </nav>
 
-  <div class="page-header__title">
-    <h1 class="page-header__title-text">Фото и видео</h1>
-    <div class="page-header__title-advantages">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
+  <div class="page-header__title page-header__title--photo">
+    <h1 class="page-header__title-text page-header__title-text--photo">Фото и видео</h1>
+    <div class="page-header__title-advantages page-header__title-advantages--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
   </div>
 
 </header>
 
 <main>
   <section class="gallery">
+    <div class="gallery-photo__wrapper">
+        <figure class="gallery-photo">
+          <img src="img/photo-1-mobile@2x.jpg" alt="Неродные просторы">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" width="320" height="auto" class="gallery-photo__pict">
+          </picture>
+          <figcaption class="gallery-photo__caption">Неродные просторы</figcaption>
+        </figure>
 
-    <figure class="gallery-photo">
-      <img src="img/photo-1-mobile@2x.jpg" alt=">Народные просторы">
-      <figcaption class="gallery-photo__caption">Народные просторы</figcaption>
-    </figure>
-
-    <div class="gallery-photo__author">
-      <span class="gallery-photo__inner">Автор фото:</span>
-      <span class="gallery-photo__name">Борис</span>
-    </div>
-    <div class="gallery-photo__likes">
-      <img src="http://placehold.it/23x21" alt="">
-      <div class="gallery-photo__likes-count">1350</div>
-    </div>
-
-    <figure class="gallery-photo">
-      <img src="img/photo-2-mobile@2x.jpg" alt="Местная растительность">
-      <figcaption class="gallery-photo__caption">Местная растительность</figcaption>
-    </figure>
-
-    <div class="gallery-photo__author">
-      <span class="gallery-photo__inner">Автор фото:</span>
-      <span class="gallery-photo__name">Сергей</span>
-    </div>
-    <div class="gallery-photo__likes">
-      <img src="http://placehold.it/23x21" alt="">
-      <div class="gallery-photo__likes-count">143</div>
+        <div class="gallery-photo__author">
+          <span class="gallery-photo__inner">Автор фото:</span>
+          <author class="gallery-photo__name">Борис</author>
+        </div>
+        <div class="gallery-photo__likes">
+          <img src="http://placehold.it/23x21" alt="">
+          <div class="gallery-photo__likes-count">1350</div>
+        </div>
     </div>
 
-    <figure class="gallery-photo">
+    <div class="gallery-photo__wrapper">
+      <figure class="gallery-photo">
+        <img src="img/photo-2-mobile@2x.jpg" alt="Местная растительность">
+        <figcaption class="gallery-photo__caption">Местная растительность</figcaption>
+      </figure>
+
+      <div class="gallery-photo__author">
+        <span class="gallery-photo__inner">Автор фото:</span>
+        <author class="gallery-photo__name">Сергей</author>
+      </div>
+      <div class="gallery-photo__likes">
+        <img src="http://placehold.it/23x21" alt="">
+        <div class="gallery-photo__likes-count">143</div>
+      </div>
+    </div>
+
+    <div class="gallery-photo__wrapper">
+      <figure class="gallery-photo">
       <img src="img/photo-3-mobile@2x.jpg" alt="Дорога на север">
       <figcaption class="gallery-photo__caption">Дорога на север</figcaption>
     </figure>
 
-    <div class="gallery-photo__author">
-      <span class="gallery-photo__inner">Автор фото:</span>
-      <span class="gallery-photo__name">Петр</span>
-    </div>
-    <div class="gallery-photo__likes">
-      <img src="http://placehold.it/23x21" alt="">
-      <div class="gallery-photo__likes-count">96</div>
+      <div class="gallery-photo__author">
+        <span class="gallery-photo__inner">Автор фото:</span>
+        <author class="gallery-photo__name">Петр</author>
+      </div>
+      <div class="gallery-photo__likes">
+        <img src="http://placehold.it/23x21" alt="">
+        <div class="gallery-photo__likes-count">96</div>
+      </div>
     </div>
 
-    <figure class="gallery-photo">
-      <img src="img/photo-4-mobile@2x.jpg" alt="Мост дьявола">
-      <figcaption class="gallery-photo__caption">Мост дьявола</figcaption>
-    </figure>
+    <div class="gallery-photo__wrapper">
+      <figure class="gallery-photo">
+        <img src="img/photo-4-mobile@2x.jpg" alt="Мост дьявола">
+        <figcaption class="gallery-photo__caption">Мост дьявола</figcaption>
+      </figure>
 
-    <div class="gallery-photo__author">
-      <span class="gallery-photo__inner">Автор фото:</span>
-      <span class="gallery-photo__name">Антон</span>
+      <div class="gallery-photo__author">
+        <span class="gallery-photo__inner">Автор фото:</span>
+        <author class="gallery-photo__name">Антон</author>
+      </div>
+      <div class="gallery-photo__likes">
+        <img src="http://placehold.it/23x21" alt="">
+        <div class="gallery-photo__likes-count">256</div>
+      </div>
     </div>
-    <div class="gallery-photo__likes">
-      <img src="http://placehold.it/23x21" alt="">
-      <div class="gallery-photo__likes-count">256</div>
-    </div>
+
   </section>
 
   <section class="video">
