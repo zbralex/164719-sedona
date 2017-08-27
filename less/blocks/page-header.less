@@ -1,22 +1,46 @@
 .page-header__title {
   position: relative;
-  min-height: 610px;
-  height: 610px;
-  background: url(/img/bg-intro-triangle-mobile.svg), url(/img/text-sedona-index.svg), url(/img/bg-back-tablet@1x.jpg);
-  background-color: @white;
-  background-size: 104%, 88%, 180%;
-  background-position: center 362px, center 90px, center 0;
-  background-repeat: no-repeat;
   text-align: center;
+
+  &--main {
+    min-height: 610px;
+    height: 610px;
+    background: url(/img/bg-intro-triangle-mobile.svg), url(/img/text-sedona-index.svg), url(/img/bg-back-tablet@1x.jpg);
+    background-color: @white;
+    background-size: 104%, 88%, 180%;
+    background-position: center 362px, center 90px, center 0;
+    background-repeat: no-repeat;
+  }
+
+  &--photo {
+    min-height: 347px;
+    background: url(/img/bg-intro-triangle-mobile.svg), url(/img/text-sedona.svg), url(/img/bg-back-tablet@1x.jpg);
+    background-color: #ffffff;
+    background-size: 104% 27px, 72% 41px, 100% 291px;
+    background-position: center 131px, center 51px, center -133px;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .page-header__title-text {
-  .absolute();
-  bottom: 60px;
-  padding: 30px;
-  .title();
-  font-weight: bold;
-  .uppercase();
+
+  &--main {
+    .absolute();
+    bottom: 60px;
+    padding: 30px;
+    .title();
+    font-weight: bold;
+    .uppercase();
+  }
+
+  &--photo {
+    position: absolute;
+    top: 53%;
+    left: 31%;
+    .title();
+    .uppercase();
+  }
 }
 
 .page-header__title-advantages {
@@ -25,4 +49,10 @@
   .absolute();
   bottom: 25px;
   padding: 0 35px;
+
+  &--photo {
+    bottom: 28px;
+    padding: 0 25px;
+    line-height: 24px;
+  }
 }

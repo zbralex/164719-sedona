@@ -1,0 +1,38 @@
+.gallery-photo__pict {
+  width: 280px;
+  height: 280px;
+}
+.gallery-photo__wrapper {
+  font-size: 14px;
+  line-height: 24px;
+  color: @black;
+  min-height: 415px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.gallery-photo {
+  height: 280px;
+  margin: 0;
+  padding: 20px;
+
+  &__caption {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  &__author {
+      margin: 20px 20px 0;
+  }
+
+  &__likes {
+    display: flex;
+    flex-direction: row;
+    padding: 9px 20px;
+  }
+
+  &__likes-count {
+    .uppercase();
+    font-weight: 600;
+    margin: 0 15px;
+  }
+}
