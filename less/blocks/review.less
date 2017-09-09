@@ -1,5 +1,6 @@
 .review__group {
   border: none;
+  min-height: 300px;
 }
 
 .review__title {
@@ -13,4 +14,31 @@
   font-size: 14px;
   line-height: 26px;
   .uppercase();
+  width: 15%;
+  align-self: center;
+}
+.review__input-data {
+  padding: 20px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  width: 80%;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.review__input-data::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.review__prop-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px;
+
+  &--radio, &--checkbox {
+    flex-flow: column wrap;
+  }
 }
