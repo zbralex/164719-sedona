@@ -4,7 +4,6 @@ var video = document.getElementById("video__container");
 
 // Buttons
 var playButton = document.getElementById("button__play-pause");
-var subtitlesButton = document.getElementById("button__subtitles");
 var fullScreenButton = document.getElementById("button__full-screen");
 
 // Sliders
