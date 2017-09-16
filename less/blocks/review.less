@@ -1,6 +1,6 @@
 .review__group {
   border: none;
-  min-height: 300px;
+  min-height: 290px;
 }
 
 .review__title {
@@ -8,20 +8,25 @@
   line-height: 26px;
   font-weight: 600;
   .uppercase();
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 .review__prop {
   font-size: 14px;
   line-height: 26px;
   .uppercase();
-  width: 15%;
+  width: 20%;
   align-self: center;
+  padding: 10px 15px 0 5px;;
 }
+
 .review__input-data {
   padding: 20px;
-  margin: 15px 0;
+  margin: 15px 0 5px 5px;
   box-sizing: border-box;
-  width: 80%;
+  width: auto;
   background-color: #f2f2f2;
   border: none;
 }
@@ -36,7 +41,8 @@
 .review__prop-wrapper {
   display: flex;
   flex-flow: row wrap;
-  padding: 5px;
+  position: relative;
+  justify-content: flex-start;
 
   &--radio, &--checkbox {
     flex-flow: column wrap;
