@@ -11,6 +11,15 @@
   margin: 0 auto;
   padding: 20px;
   padding-bottom: 0;
+  text-align: center;
+
+  &--label {
+    display: block;
+    padding: 0;
+    margin: 20px 0 0 40px;
+    text-align: left;
+    font-size: 14px;
+  }
 }
 
 .review__prop {
@@ -19,7 +28,8 @@
   .uppercase();
   width: 20%;
   align-self: center;
-  padding: 10px 15px 0 5px;;
+  padding: 10px 15px 0 5px;
+  flex-basis: 10%;
 }
 
 .review__input-data {
@@ -29,6 +39,10 @@
   width: auto;
   background-color: #f2f2f2;
   border: none;
+  flex-basis: 50%;
+  &--tel {
+    margin: 5px 0 0 20px;
+  }
 }
 
 .review__input-data::-webkit-input-placeholder {
@@ -43,8 +57,39 @@
   flex-flow: row wrap;
   position: relative;
   justify-content: flex-start;
+  
 
   &--radio, &--checkbox {
     flex-flow: column wrap;
   }
+}
+
+.review__check-button {
+  display: none;
+}
+
+.review__prop--circle::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  background-color: #ddd;
+  border-radius: 50%;
+  padding: 9px;
+  margin: -10px 22px 10px 0;
+  flex-shrink: 0;
+}
+
+.review__prop--circle {
+  width: 70%;
+}
+.review__prop {
+  display: flex;
+  flex-direction: row;
+  line-height: 18px;
+  cursor: pointer;
+  margin: 20px 0 0;
+}
+.review__check-button:checked+.review__prop--circle::before {
+  background-color: #333333;
+  background-clip: content-box;
 }
