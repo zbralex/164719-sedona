@@ -16,7 +16,7 @@
   &--label {
     display: block;
     padding: 0;
-    margin: 20px 0 0 40px;
+    margin: 17px 0 0 40px;
     text-align: left;
     font-size: 14px;
   }
@@ -69,18 +69,30 @@
 
 .review__prop--circle::before {
   content: "";
-  height: 17px;
-  width: 17px;
+  height: 20px;
+  width: 20px;
   background-color: #ddd;
   border-radius: 50%;
-  padding: 9px;
-  margin: -10px 22px 10px 0;
+  padding: 15px;
+  margin: -10px 5px 0 0;
+  flex-shrink: 0;
+}
+
+.review__prop--rect::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+  margin: -10px 5px 0 0;
   flex-shrink: 0;
 }
 
 .review__prop--circle {
   width: 70%;
 }
+
 .review__prop {
   display: flex;
   flex-direction: row;
@@ -88,7 +100,20 @@
   cursor: pointer;
   margin: 20px 0 0;
 }
+
+.review__prop--rect {
+  margin: 5px 0 15px;
+}
+
 .review__check-button:checked+.review__prop--circle::before {
   background-color: #333333;
-  background-clip: content-box;
+  background-clip: border-box;
+  box-shadow: 0 0 0 15px #ddd;
+  padding: 0;
+  margin: 5px 20px 0 15px;
+}
+
+.review__check-button:checked+.review__prop--rect::before {
+  background: url("/img/icon-tick.svg") center no-repeat #f2f2f2;
+  padding: 20px;
 }
