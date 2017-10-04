@@ -9,6 +9,10 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+
+  @media @tablets {
+    flex-direction: row;    
+  }
 }
 
 .main-nav__item {
@@ -24,6 +28,23 @@
     font-size: 0;
     padding: 0;
     height: 55px;
+  }  
+  @media @tablets {
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 4;
+    }
+    &:nth-child(4) {
+      order: 5;
+    }
+    &:nth-child(5) {
+      order: 3;
+    }
   }
 }
 
