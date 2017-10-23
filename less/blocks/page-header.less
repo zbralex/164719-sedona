@@ -10,6 +10,12 @@
     background-size: 104%, 88%, 180%;
     background-position: center 362px, center 90px, center 0;
     background-repeat: no-repeat;
+
+      @media @tablets {
+        background-size: 100%, 60%, 100%;
+        background-position: center 462px, center 77px, center 0;
+        background-image: url(/img/tablet-triangle.png), url(/img/text-sedona-index.svg), url(/img/bg-back-tablet@1x.jpg);
+      }
   }
 
   &--photo {
@@ -32,6 +38,11 @@
     .title();
     font-weight: bold;
     .uppercase();
+
+    @media @tablets {
+      font-size: 21px;
+      line-height: 26px;
+    }
   }
 
   &--photo {
