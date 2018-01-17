@@ -9,6 +9,10 @@
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;
+
+  @media @tablets {
+    flex-direction: row;
+  }
 }
 
 .main-nav__item {
@@ -24,6 +28,29 @@
     font-size: 0;
     padding: 0;
     height: 55px;
+
+    @media @tablets {
+      background-color: #82b3d3;
+      height: 56px;
+    }
+  }
+
+  @media @tablets {
+    &:nth-child(1) {
+      order: 1;
+    }
+    &:nth-child(2) {
+      order: 2;
+    }
+    &:nth-child(3) {
+      order: 4;
+    }
+    &:nth-child(4) {
+      order: 5;
+    }
+    &:nth-child(5) {
+      order: 3;
+    }
   }
 }
 
@@ -31,6 +58,13 @@
   color: inherit;
   text-decoration: none;
   position: relative;
+
+  @media @tablets {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    color: @black;
+  }
 }
 
 .logo-sedona {
@@ -41,4 +75,11 @@
   left: -50px;
   right: 0;
   z-index: 1;
+
+  @media @tablets {
+    height: 100px;
+    position: absolute;
+    top: -15px;
+    left: -33px;
+  }
 }
