@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
 
       @media @tablets {
+        height: 725px;
         background-size: 100%, 60%, 100%;
         background-position: center 462px, center 77px, center 0;
         background-image: url(/img/tablet-triangle.png), url(/img/text-sedona-index.svg), url(/img/bg-back-tablet@1x.jpg);
@@ -42,6 +43,9 @@
     @media @tablets {
       font-size: 21px;
       line-height: 26px;
+      margin: 0 100px 0px 100px;
+      padding: 15px 25px;
+      bottom: 90px;
     }
   }
 
@@ -65,6 +69,12 @@
     bottom: 28px;
     padding: 0 25px;
     line-height: 24px;
+  }
+
+  @media @tablets {
+    margin: 0 80px 0 120px;
+    padding: 15px 25px;
+    bottom: 37px;
   }
 }
 
@@ -102,5 +112,11 @@
     font-size: 14px;
     line-height: 24px;
     margin-top: 22px;
+  }
+}
+
+.page-header__wraper {
+  @media @tablets {
+    width: 70%;
   }
 }

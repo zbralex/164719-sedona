@@ -1,9 +1,24 @@
 .advantages {
   text-align: center;
 
+  &--first{
+    text-align: center;
+    margin-bottom: 25px;
+
+    @media @tablets {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
   &--third {
     min-height: 165px;
     padding: 0 20px;
+  }
+
+  &--second {
+    min-height: 450px;
+    margin-top: 5px;
   }
 
   &--fourth {
@@ -27,8 +42,26 @@
   color: @white;
   margin: 0;
 
+  @media @tablets {
+    font-size: 21px;
+  }
+
+  &--first {
+    padding: 58px 0 0 0;
+    background-image: url(/img/bg-triangle.svg);
+    background-color: #81b3d2;
+    background-position: center -19px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media @tablets {
+      background-image: none;
+      padding: 45px 30px 0 30px;
+    }
+  }
+
   &--second {
-    padding: 39px 0 0 2px;
+    padding: 38px 0 0 0;
   }
 
   &--third {
@@ -48,6 +81,10 @@
   .advantages-description();
   padding: 0 25px;
 
+  @media @tablets {
+    margin: 20px 10px 0 10px;
+  }
+
   &--third, &--fourth {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
@@ -57,15 +94,6 @@
     margin: 0;
     color: lighten(@black, 20%);
   }
-}
-
-.advantages--first{
-  text-align: center;
-  background-image: url(/img/bg-triangle.svg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 58px 0 10px;
 }
 
 .advantages__number {
@@ -80,14 +108,25 @@
 .advantages__list {
   .list-reset();
   box-sizing: border-box;
+
+  @media @tablets {
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+  }
 }
 
 .advantages__wrapper {
-  background-color: rgba(130, 179, 211, 0.85);
-  height: 153px;
+  background-color: #81b3d2;
+  height: 210px;
+
+  @media @tablets {
+    min-height: 255px;
+    flex-basis: 33.3%;
+  }
 
   &--second {
-    min-height: 190px;
+    height: 190px;
   }
 }
 
@@ -99,6 +138,11 @@
   justify-content: center;
   padding-left: 8px;
   padding-top: 20px;
+
+  @media @tablets {
+    width: auto;
+    padding: 0;
+  }
 }
 
 .advantages__list-title {
@@ -128,6 +172,11 @@
   min-height: 100px;
   max-height: 100%;
   .uppercase();
+
+  @media @tablets {
+    height: auto;
+    flex-flow: column nowrap;
+  }
 }
 
 .advantages__list-description {
@@ -152,7 +201,8 @@
   padding: 6px 0 6px 6px;
 }
 
-.advantages--second {
-  min-height: 450px;
-  margin-top: 13px;
+.advantages__pict {
+  @media @tablets {
+    width: 100%;
+  }
 }
