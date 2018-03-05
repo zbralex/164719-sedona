@@ -1,6 +1,12 @@
 .gallery-photo__pict {
   width: 280px;
   height: 280px;
+
+  @media @tablets {
+    width: 648px;
+    height: auto;
+    margin-top: 20px;
+  }
 }
 .gallery-photo__wrapper {
   font-size: 14px;
@@ -8,6 +14,13 @@
   color: @black;
   min-height: 414px;
   border-bottom: 1px solid #e5e5e5;
+
+  @media @tablets {
+    padding: 30px 60px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
 }
 .gallery-photo {
   height: 280px;
@@ -18,10 +31,19 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 10px;
+
+    @media @tablets {
+      margin-top: 8px;
+      padding: 2px 20px;
+    }
   }
 
   &__author {
       margin: 20px 20px 0;
+
+      @media @tablets {
+        margin: 0px 20px 0;
+      }
   }
 
   &__likes {
@@ -34,5 +56,10 @@
     .uppercase();
     font-weight: 600;
     margin: 0 15px;
+  }
+
+  @media @tablets {
+    padding: initial;
+    height: auto;
   }
 }
