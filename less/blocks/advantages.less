@@ -38,19 +38,20 @@
   }
 
   &--third, &--fourth, &--fifth {
-    background-color: #eeeeee;
-
-    @media @tablets {
+      @media @tablets {
       flex-basis: 25%;
     }
   }
 }
 
 .advantages__wrapper-section {
+  background-color: #eeeeee;
+
   @media @tablets {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    min-height: 253px;
   }
 }
 
