@@ -11,14 +11,20 @@
     }
   }
 
-  &--third {
-    min-height: 165px;
-    padding: 0 20px;
-  }
-
   &--second {
     min-height: 450px;
     margin-top: 5px;
+
+    @media @tablets {
+      display: flex;
+      flex-flow: row wrap;
+      min-height: 260px;
+    }
+  }
+
+  &--third {
+    min-height: 165px;
+    padding: 0 20px;
   }
 
   &--fourth {
@@ -33,6 +39,18 @@
 
   &--third, &--fourth, &--fifth {
     background-color: #eeeeee;
+
+    @media @tablets {
+      flex-basis: 25%;
+    }
+  }
+}
+
+.advantages__wrapper-section {
+  @media @tablets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
 }
 
@@ -70,10 +88,18 @@
 
   &--fourth, &--fifth {
     padding: 26px 0 0;
+
+    @media @tablets {
+      padding: 26px 20px 0;
+    }
   }
 
   &--third, &--fourth, &--fifth {
     color: @black;
+
+    @media @tablets {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -87,12 +113,20 @@
 
   &--third, &--fourth {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    @media @tablets {
+      border: none;
+    }
   }
 
   &--third, &--fourth, &--fifth {
     padding: 14px 15px 27px;
     margin: 0;
     color: lighten(@black, 20%);
+
+    @media @tablets {
+      padding: 22px 15px 27px;
+    }
   }
 }
 
@@ -121,12 +155,16 @@
   height: 210px;
 
   @media @tablets {
-    min-height: 255px;
+    min-height: 256px;
     flex-basis: 33.3%;
   }
 
   &--second {
     height: 190px;
+
+    @media @tablets {
+      order: 2;
+    }
   }
 }
 
