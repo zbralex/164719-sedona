@@ -9,15 +9,12 @@
     font-size: 21px;
     text-align: center;
     padding-top: 30px;
-  }
-}
 
-.search-form__tag {
-  .line-height-title();
-  .uppercase();
-  font-size: 21px;
-  text-align: center;
-  font-weight: 600;
+    @media @tablets {
+      font-size: 30px;
+      margin-top: 25px;
+    }
+  }
 }
 
 .search-form__description {
@@ -27,6 +24,11 @@
   margin: 0;
   padding: 19px 25px 0 25px;
   text-align: center;
+
+  @media @tablets {
+    width: 60%;
+    margin: 12px auto 0;
+  }
 }
 
 .search-form__link-wrapper {
@@ -34,7 +36,12 @@
   background-color: #81b3d2;
   text-align: center;
   width: 250px;
-  margin: 35px auto;
+  margin: 35px auto 48px;
+
+  @media @tablets {
+    width: 428px;
+    margin: 43px auto 60px;
+  }
 }
 
 .search-form__link {
@@ -48,4 +55,9 @@
 
 .search-form__map-frame {
   height: 370px;
+  width: 100%;
+
+  @media @tablets {
+    height: 350px;
+  }
 }
