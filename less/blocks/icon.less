@@ -4,6 +4,25 @@
     fill: #81b3d2;
     width: 38px;
     height: 38px;
+
+    @media @tablets {
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
+
+.icon {
+  @media @tablets {
+    &-house {
+      margin: 40px 10px 5px 3px;
+    }
+    &-burger {
+      margin: 35px 25px 0 0;
+    }
+    &-gift {
+      margin: 30px 20px 0 0;
+    }
   }
 }
 
@@ -48,17 +67,6 @@
   }
 }
 
-.seek-bar__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 87%;
-  height: 50px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .button {
   &__subtitles, &__full-screen, &__replay{
     background: none;
@@ -66,10 +74,6 @@
   }
 }
 
-.seek-bar {
-  width: 90%;
-  height: 2px;
-}
 .button__play-pause {
   position: absolute;
   bottom: 100px;

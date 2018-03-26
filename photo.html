@@ -127,6 +127,7 @@
   </nav>
 
   <div class="page-header__title page-header__title--photo">
+    <div class="page-header__false-wrapper page-header__false-wrapper--photo"></div>
     <h1 class="page-header__title-text page-header__title-text--photo">Фото и видео</h1>
     <div class="page-header__title-advantages page-header__title-advantages--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</div>
   </div>
@@ -135,85 +136,105 @@
 
 <main>
   <section class="gallery">
-    <div class="gallery-photo__wrapper">
-        <figure class="gallery-photo">
+    <div class="gallery-photo__wrapper gallery-photo__wrapper--wide">
+        <div class="gallery-photo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
             <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы" width="320" height="auto" class="gallery-photo__pict">
           </picture>
-          <figcaption class="gallery-photo__caption">Неродные просторы</figcaption>
-        </figure>
-
-        <div class="gallery-photo__author">
-          <span class="gallery-photo__inner">Автор фото:</span>
-          <author class="gallery-photo__name">Борис</author>
         </div>
-        <div class="gallery-photo__likes">
+
+        <div class="gallery-photo__caption-wrapper gallery-photo__caption-wrapper--wide">
+          <div class="gallery-photo__caption-inner  gallery-photo__caption-inner--wide">
+            <div class="gallery-photo__caption  gallery-photo__caption--wide">Неродные просторы</div>
+              <div class="gallery-photo__author gallery-photo__author--wide">
+                <span class="gallery-photo__inner  gallery-photo__inner--wide">Автор фото:</span>
+                <author class="gallery-photo__name  gallery-photo__name--wide">Борис</author>
+              </div>
+            </div>
+
+        <div class="gallery-photo__likes gallery-photo__likes--wide">
           <svg width="63" height="63" class="icon-like"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use></svg>
-          <div class="gallery-photo__likes-count">1350</div>
+          <div class="gallery-photo__likes-count  gallery-photo__likes-count--wide">1350</div>
         </div>
     </div>
+  </div>
 
     <div class="gallery-photo__wrapper">
-      <figure class="gallery-photo">
+      <div class="gallery-photo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
           <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность" width="320" height="auto" class="gallery-photo__pict">
         </picture>
-        <figcaption class="gallery-photo__caption">Местная растительность</figcaption>
-      </figure>
-
-      <div class="gallery-photo__author">
-        <span class="gallery-photo__inner">Автор фото:</span>
-        <author class="gallery-photo__name">Сергей</author>
       </div>
+
+      <div class="gallery-photo__caption-wrapper">
+        <div class="gallery-photo__caption-inner">
+          <div class="gallery-photo__caption">Местная растительность</div>
+            <div class="gallery-photo__author">
+              <span class="gallery-photo__inner">Автор фото:</span>
+              <author class="gallery-photo__name">Сергей</author>
+            </div>
+        </div>
+
       <div class="gallery-photo__likes">
         <svg width="63" height="63" class="icon-like"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use></svg>
         <div class="gallery-photo__likes-count">143</div>
       </div>
     </div>
+  </div>
 
     <div class="gallery-photo__wrapper">
-      <figure class="gallery-photo">
+      <div class="gallery-photo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
           <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север" width="320" height="auto" class="gallery-photo__pict">
         </picture>
-        <figcaption class="gallery-photo__caption">Дорога на север</figcaption>
-      </figure>
+      </div>
 
-      <div class="gallery-photo__author">
-        <span class="gallery-photo__inner">Автор фото:</span>
-        <author class="gallery-photo__name">Петр</author>
-      </div>
-      <div class="gallery-photo__likes">
-        <svg width="63" height="63" class="icon-like"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use></svg>
-        <div class="gallery-photo__likes-count">96</div>
-      </div>
+      <div class="gallery-photo__caption-wrapper">
+          <div class="gallery-photo__caption-inner">
+            <div class="gallery-photo__caption">Дорога на север</div>
+              <div class="gallery-photo__author">
+                <span class="gallery-photo__inner">Автор фото:</span>
+                <author class="gallery-photo__name">Петр</author>
+              </div>
+          </div>
+
+        <div class="gallery-photo__likes">
+          <svg width="63" height="63" class="icon-like"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use></svg>
+          <div class="gallery-photo__likes-count">96</div>
+        </div>
     </div>
+  </div>
+
       <div class="gallery-photo__wrapper">
-        <figure class="gallery-photo">
+        <div class="gallery-photo">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
             <img src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола" width="320" height="auto" class="gallery-photo__pict">
           </picture>
-          <figcaption class="gallery-photo__caption">Мост дьявола</figcaption>
-        </figure>
-
-        <div class="gallery-photo__author">
-          <span class="gallery-photo__inner">Автор фото:</span>
-          <author class="gallery-photo__name">Антон</author>
         </div>
+
+    <div class="gallery-photo__caption-wrapper">
+        <div class="gallery-photo__caption-inner">
+          <div class="gallery-photo__caption">Мост дьявола</div>
+              <div class="gallery-photo__author">
+                <span class="gallery-photo__inner">Автор фото:</span>
+                <author class="gallery-photo__name">Антон</author>
+              </div>
+        </div>
+
         <div class="gallery-photo__likes">
           <svg width="63" height="63" class="icon-like"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-like"></use></svg>
           <div class="gallery-photo__likes-count">254</div>
         </div>
       </div>
-
+    </div>
   </section>
 
   <section class="video">
@@ -221,7 +242,7 @@
     <div class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
 
     <div id="video__block" class="video__block">
-      <video class="video__container" id="video__container" width="320" height="220" poster="../img/video-mobile@1x.jpg" loop="loop">
+      <video class="video__container" id="video__container" width="320" height="220" loop="loop">
         <source src="../video/sedona_2014.mp4" type="video/mp4">
       </video>
 
@@ -243,10 +264,7 @@
 </main>
 
 <footer class="page-footer">
-  <div class="search-form__tag">#visitSEDONA</div>
-  <div class="page-footer__logo">
-    <a class="page-footer__logo-link"></a>
-  </div>
+  <div class="page-footer__tag">#visitSEDONA</div>
   <div class="page-footer__socials">
     <a class="page-footer__socials-link" href="https://www.instagram.com/htmlacademy/">Мы в Твиттере<svg width="63" height="63" class="icon-twitter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg></a>
     <a class="page-footer__socials-link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке<svg width="63" height="63" class="icon-facebook"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg></a>
