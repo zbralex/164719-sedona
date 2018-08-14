@@ -20,6 +20,13 @@
 
 .page-header__false-wrapper {
     min-height: 388px;
+    &--review {
+      min-height: 360px;
+    }
+
+    @media @tablets {
+      min-height: 525px;
+    }
 
     &--index {
       background-image: url(/img/bg-intro-triangle-mobile.svg), url(/img/text-sedona-index.svg), url(/img/bg-back-tablet@1x.jpg);
@@ -127,12 +134,19 @@
   .uppercase();
   text-align: center;
   position: relative;
-  background: url(/img/bg-intro-triangle-mobile.svg), url(/img/text-sedona.svg), url(/img/bg-back-tablet@1x.jpg);
+  background-image: url(/img/bg-intro-triangle-mobile.svg), url(/img/text-sedona.svg), url(/img/bg-back-tablet@1x.jpg);
   background-color: #ffffff;
   background-size: 104% 27px, 72% 41px, 100% 291px;
   background-position: center 131px, center 51px, center -133px;
   background-repeat: no-repeat;
   border-bottom: 1px solid #e5e5e5;
+
+  @media @tablets {
+    background-image: url(/img/tablet-triangle.png), url(/img/text-sedona.svg), url(/img/bg-back-tablet@1x.jpg);
+    background-color: #ffffff;
+    background-size: 100%, 60%, 100%;
+    background-position: center 233px, center 95px, center -228px;
+  }
 
   &-title {
     font-size: 18px;
@@ -140,12 +154,22 @@
     font-weight: 600;
     margin: 40px 0 0;
     padding: 5px;
+
+    @media @tablets {
+      font-size: 30px;
+      margin: 45px 0 0;
+    }
   }
 
   &-text {
     font-size: 14px;
     line-height: 24px;
     margin-top: 22px;
+
+    @media @tablets {
+      max-width: 440px;
+      margin: 25px auto 0;
+    }
   }
 }
 
