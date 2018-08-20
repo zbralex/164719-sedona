@@ -24,6 +24,10 @@
   @media @tablets {
     font-size: 21px;
     padding: 16px 0px;
+
+    &--sights {
+      width: 50%;
+    }
   }
 }
 
@@ -141,7 +145,10 @@
   text-transform: none;
 
   @media @tablets {
-    flex-basis: 35%;
+    flex-basis: 45%;
+    padding: 0;
+    align-items: center;
+    margin: 20px 0px 7px 13px;
   }
 }
 
@@ -183,9 +190,11 @@
   flex-direction: column;
 
   @media @tablets{
+    position: relative;
     max-width: 680px;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: left;
+    margin: 0 auto 95px;
   }
 }
 
@@ -239,10 +248,13 @@
 
     .review__sights {
       order: 5;
+      margin-top: 27px;
     }
 
     .review__additional {
       order: 6;
+      flex-basis: 100%;
+      text-align: center;
     }
 
     .review__submit {
@@ -279,17 +291,47 @@
 
       &--checkbox {
         flex-flow: row wrap;
-        justify-content: center;
-        width: 600px;
+        justify-content: space-between;
+        width: 75%;
+        margin: 0 auto;
       }
 
       &--small {
         justify-content: center;
-        margin-top: 20px;
       }
     }
 
     .review__input-data::-webkit-input-placeholder {
       font-size: 16px;
+    }
+
+    .review__prop--rect::before {
+      margin: 0 25px 0 0;
+    }
+    .review__input-text {
+      margin-top: 54px;
+      width: 90%;
+      font-size: 16px;
+    }
+
+    .review__submit {
+      position: relative;
+      min-width: 325px;
+      max-width: 325px;
+      margin: 57px 15px auto;
+    }
+    .review__submit:after {
+      content: "*- Обязательные поля";
+      display: block;
+      position: absolute;
+    }
+
+    .review__form::after {
+      content: "* — обязательные поля";
+      position: absolute;
+      bottom: 20px;
+      right: 15px;
+      text-transform: uppercase;
+      font-size: 14px;
     }
 }
