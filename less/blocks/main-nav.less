@@ -13,6 +13,11 @@
   @media @tablets {
     flex-direction: row;
   }
+
+  @media @desktop {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .main-nav__item {
@@ -52,6 +57,10 @@
       order: 3;
     }
   }
+
+  @media @desktop {
+    background: none;
+  }
 }
 
 .main-nav__link {
@@ -81,5 +90,11 @@
     position: absolute;
     top: -15px;
     left: -33px;
+  }
+}
+
+@media @desktop {
+  .main-nav {
+    background-color: #82b3d3;
   }
 }
