@@ -13,6 +13,11 @@
   @media @tablets {
     flex-direction: row;
   }
+
+  @media @desktop {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .main-nav__item {
@@ -28,6 +33,7 @@
     font-size: 0;
     padding: 0;
     height: 55px;
+    position: relative;
 
     @media @tablets {
       background-color: #82b3d3;
@@ -52,6 +58,10 @@
       order: 3;
     }
   }
+
+  @media @desktop {
+    background: none;
+  }
 }
 
 .main-nav__link {
@@ -59,11 +69,37 @@
   text-decoration: none;
   position: relative;
 
+
   @media @tablets {
     font-size: 14px;
     line-height: 26px;
     font-weight: 600;
     color: @black;
+  }
+
+  &--logo {
+    background-image: url(/img/logo-sedona-mobile.svg);
+    width: 103px;
+    height: 84px;
+    position: absolute;
+    bottom: -28px;
+    left: 35%;
+    right: 40%;
+    z-index: 1;
+    font-size: 0;
+
+    @media @tablets {
+      background-image: url(/img/logo-sedona-tablet.svg);
+      left: 16%;
+    }
+
+    @media @desktop {
+      background-image: url(/img/logo-sedona-desktop.svg);
+      left: 11%;
+      width: 188px;
+      height: 96px;
+      bottom: -40px;
+    }
   }
 }
 
@@ -81,5 +117,11 @@
     position: absolute;
     top: -15px;
     left: -33px;
+  }
+}
+
+@media @desktop {
+  .main-nav {
+    background-color: none;
   }
 }
