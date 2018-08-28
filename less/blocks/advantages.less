@@ -78,6 +78,10 @@
       background-image: none;
       padding: 45px 30px 0 30px;
     }
+
+    @media @desktop {
+      padding: 50px 30% 0 30%;
+    }
   }
 
   &--second {
@@ -85,6 +89,9 @@
 
     @media @tablets {
       padding: 45px 50px 0;
+    }
+    @media @desktop {
+      padding: 60px 30% 0 30%;
     }
   }
 
@@ -105,6 +112,10 @@
 
     @media @tablets {
       margin-top: 15px;
+    }
+    @media @desktop {
+      margin-top: 20px;
+      padding: 25px 29% 0;
     }
   }
 }
@@ -162,7 +173,11 @@
 
   @media @tablets {
     min-height: 256px;
-    flex-basis: 33.3%;
+    flex-basis: 34%;
+  }
+
+  @media @desktop {
+    flex-basis: 33.5%;
   }
 
   &--second {
@@ -170,13 +185,14 @@
 
     @media @tablets {
       order: 2;
+      height: auto;
+      flex-basis: 33.5%;
     }
   }
 }
 
 .advantages__icon {
   flex-basis: 100%;
-  outline: 1px solid;
   width: 20%;
   display: inherit;
   justify-content: center;
@@ -211,7 +227,6 @@
   width: auto;
   align-items: flex-end;
   .title();
-  outline: 1px solid;
 
   &--food {
     flex-basis: 40%;
@@ -265,7 +280,6 @@
   font-size: 14px;
   line-height: 21px;
   text-align: left;
-  outline: 1px solid;
 
   &--food {
     padding: 1px 20px 5px 0;
@@ -283,7 +297,57 @@
 }
 
 .advantages__pict {
-  @media @tablets {
-    width: 100%;
+  height: 262px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    &--real-city {
+    background-image: url(/img/photo-city-mobile@1x.jpg);
+
+    @media @retina {
+      background-image: url(/img/photo-city-mobile@2x.jpg);
+    }
+
+    @media @tablets {
+      width: 65%;
+      height: 255px;
+      background-image: url(/img/photo-city-tablet@1x.jpg);
+
+      @media @retina {
+        background-image: url(/img/photo-city-tablet@2x.jpg);
+      }
+    }
+    @media @desktop {
+      width: 66.5%;
+      background-image: url(/img/photo-city@1x.jpg);
+    }
+    @media @retina {
+      background-image: url(/img/photo-city@2x.jpg);
+    }
+  }
+
+  &--devil-bridge {
+    background-image: url(/img/photo-bridge-mobile@1x.jpg);
+
+    @media @retina {
+      background-image: url(/img/photo-bridge-mobile@2x.jpg);
+    }
+
+    @media @tablets {
+      width: 66.5%;
+      height: auto;
+      background-image: url(/img/photo-bridge-tablet@1x.jpg);
+
+      @media @retina {
+        background-image: url(/img/photo-bridge-tablet@2x.jpg);
+      }
+    }
+    @media @desktop {
+      background-image: url(/img/photo-bridge@1x.jpg);
+    }
+    @media @retina {
+      background-image: url(/img/photo-bridge@2x.jpg);
+    }
   }
 }
