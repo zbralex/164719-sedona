@@ -66,6 +66,13 @@
         background-size: 100%, 60%, 100%;
         background-position: bottom, 50% 45%, center 100%;
       }
+
+      @media @desktop {
+        min-height: 300px;
+        background-image: url(/img/desktop-triangle.png), url(/img/text-sedona.svg), url(/img/bg-back-tablet@1x.jpg);
+        background-size: 100%, 38%, 100%;
+        background-position: center 100%, 50% 46%, center 100%;
+      }
     }
 }
 
@@ -111,6 +118,10 @@
       font-weight: 600;
       margin-top: 60px;
     }
+
+    @media @desktop {
+      margin-top: 95px;
+    }
   }
 }
 
@@ -131,6 +142,11 @@
     margin: 0 auto;
     padding: 15px 25px;
     width: 58%;
+  }
+
+  @media @desktop {
+    padding: 18px 25px;
+    width: 36%;
   }
 }
 
@@ -193,5 +209,12 @@
 .page-header__wraper {
   @media @tablets {
     width: 70%;
+  }
+}
+
+.page-header {
+  @media @desktop {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
