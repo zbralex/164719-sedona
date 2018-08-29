@@ -5,6 +5,10 @@
   @media @tablets {
     margin-bottom: 25px;
   }
+
+  @media @desktop {
+    margin-bottom: 110px;
+  }
 }
 
 .video__title {
@@ -34,6 +38,10 @@
     text-align: center;
     margin: 32px auto;
   }
+
+  @media @desktop {
+    width: 35%;
+  }
 }
 
 .video__block {
@@ -50,6 +58,12 @@
     margin: 68px auto 0;
     max-width: 650px;
   }
+  @media @desktop {
+    width: 800px;
+    max-width: 800px;
+    height: 505px;
+    min-height: 505px;
+  }
 }
 
 .video__controls-wrapper {
@@ -64,6 +78,13 @@
 
   @media @tablets {
     width: 100%;
+  }
+
+  @media @desktop {
+    position: absolute;
+    bottom: 20px;
+    background: none;
+    justify-content: space-between;
   }
 }
 
@@ -94,6 +115,16 @@
       background-image: url(../img/video-tablet@2x.jpg);
     }
   }
+
+  @media @desktop {
+    background-position: center;
+    background-size: contain;
+    background-image: url(../img/video-desktop@1x.jpg);
+
+    @media @retina {
+      background-image: url(../img/video-desktop@2x.jpg);
+    }
+  }
 }
 
 .sophis-video-control {
@@ -119,4 +150,10 @@
 .seek-bar {
   width: 90%;
   height: 2px;
+
+  @media @desktop {
+    width: 70%;
+    position: absolute;
+    left: 90px;
+  }
 }
