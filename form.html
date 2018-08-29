@@ -12,32 +12,6 @@
   <meta property="og:image:height" content="137"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content= "https://zbralex.github.io/"/>
-  <!-- Pixel Glass -->
-  <style>
-    HTML {
-      background-repeat: no-repeat;
-      background-position:  50% 0;
-      /* Mobile layout by default */
-      background-image: url( "pixelperfect/sedona-form-mobile.jpg" );
-    }
-    /* Tablet */
-    @media ( min-width: 768px ) {
-      HTML {
-        /* Tablet layout */
-        background-image: url( "pixelperfect/sedona-form-tablet.jpg" );
-      }
-    }
-    /* Desktop */
-    @media ( min-width: 1280px ) {
-      HTML {
-        /* Desktop layout */
-        background-image: url( "pixelperfect/sedona-form-desktop.jpg" );
-      }
-    }
-  </style>
-  <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-  <script src="../node_modules/pixel-glass/script.js"></script>
-  <!-- // Pixel Glass -->
 </head>
 <body>
 <div class="body-wrapper">
@@ -102,7 +76,7 @@
       <fieldset class="review__group">
 
         <legend class="review__title">Представьтесь</legend>
-        <div class="review__prop-wrapper review__prop-wrapper--small">
+        <div class="review__prop-wrapper review__prop-wrapper--bio">
 
           <label for="name" class="review__prop review__prop--name">Имя*:</label>
           <input type="text" name="name" id="name" class="review__input-data" placeholder="Петр" required>
@@ -117,20 +91,22 @@
     </div>
 
     <div class="review__tel review__wrapper">
-      <div class="review__title">Контактная информация:</div>
-      <label for="tel" class="review__title review__title--label">Контактный телефон*:</label>
+      <fieldset class="review__group">
+      <legend class="review__title">Контактная информация:</legend>
+      <div class="review__prop-wrapper-wide">
       <div class="review__prop-wrapper review__prop-wrapper--small">
+        <label for="tel" class="review__title review__title--label">Контактный телефон*:</label>
         <input type="tel" name="tel" id="tel" class="review__input-data review__input-data--tel" placeholder="Введите телефон" required>
         <svg class="icon-phone" width="24.829px" height="24.333px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-phone"></use></svg>
       </div>
-    </div>
 
-    <div class="review__email review__wrapper">
-      <label for="email" class="review__title review__title--label">Электронная почта*:</label>
       <div class="review__prop-wrapper review__prop-wrapper--small">
+        <label for="email" class="review__title review__title--label">Электронная почта*:</label>
         <input type="email" name="email" id="email"  class="review__input-data review__input-data--mail" placeholder="Введите e-mail" required>
         <svg class="icon-email" width="32px" height="32px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use></svg>
       </div>
+    </div>
+    </fieldset>
     </div>
 
     <div class="review__type review__wrapper">
@@ -158,7 +134,7 @@
 
       <fieldset class="review__group">
 
-        <legend class="review__title review__title--sights">посещенные достопримечательности:</legend>
+        <legend class="review__title review__title--sights">Посещенные достопримечательности:</legend>
 
         <div class="review__prop-wrapper review__prop-wrapper--checkbox">
 
