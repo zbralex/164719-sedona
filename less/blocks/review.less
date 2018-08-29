@@ -196,6 +196,10 @@
     justify-content: left;
     margin: 0 auto 95px;
   }
+
+  @media @desktop {
+    max-width: 1000px;
+  }
 }
 
   @media @tablets {
@@ -334,4 +338,68 @@
       text-transform: uppercase;
       font-size: 14px;
     }
+}
+
+@media @desktop {
+  .review__input-data {
+    flex-basis: 70%;
+  }
+
+  .review__prop-wrapper--small {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 50%;
+    align-items: center;
+    max-width: 50%;
+  }
+  .review__prop-wrapper--bio {
+    min-height: 260px;
+    float: right;
+    max-width: 410px;
+  }
+
+  .review__prop-wrapper-wide {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .review__group {
+    min-height: 155px;
+  }
+
+  .review__tel {
+    margin-top: 30px;
+  }
+
+  .review__title--label {
+    margin: 2px 0 0px 0px;
+    flex-shrink: 0;
+  }
+  .review__input-data--mail {
+    margin: 5px 0 0 0;
+  }
+  .review__sights {
+    width: 100%;
+    margin-top: 35px;
+  }
+  .review__title--sights {
+    width: 40%;
+  }
+  .review__prop-wrapper--checkbox {
+    width: 100%;
+  }
+  .review__prop--rect {
+    flex-basis: 22%;
+  }
+  .review__additional {
+    margin-top: 45px;
+  }
+
+  .review__submit {
+    font-size: 18px;
+    min-width: 480px;
+    margin: 60px 20px auto;
+  }
 }
